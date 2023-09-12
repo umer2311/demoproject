@@ -133,11 +133,14 @@ nav {
   .footer-icons ul li a:hover{ 
     color:#CCC;
   }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 500px) {
     .menue {
       width: 46%;
-      grid-template-columns: repeat(2, auto);
-      grid-template-rows: repeat(3, auto);
+      display:grid;
+      grid-area:'item0 item1'
+      'item2 item3'
+      'item4 item5';
+    
 
     }
     .Footer{
