@@ -1,0 +1,154 @@
+body{
+    background-image: linear-gradient(black, rgb(204, 0, 255));
+    margin: 0 auto;
+    color:white;
+  }
+header{
+    color: white;
+    padding: 10px;
+}
+
+.header-content {
+    position:fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+h2{
+    margin:10px;
+  }
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+li {
+    float:left;
+  }
+li :hover{
+    color:blueviolet;
+    border-bottom:3px solid skyblue ;
+   
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+.intro{
+    padding-top: 100px;
+    width:100%;
+     height:500px;
+    color:black;
+    text-align: center;
+    
+}
+.intro:before{
+  content: "";
+  background-image: url('b1.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  max-width:100%;
+  height:auto;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  bottom: 150px;
+  left: 0px;
+  opacity: 0.75;
+  
+  
+  
+}
+.text1{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-family:'Times New Roman';
+  }
+  .text2{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-family:'Times New Roman';
+  }
+  .text3{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-family:'Times New Roman';
+    font-weight: bold;
+    color:black;
+    line-height: 30px;
+  }
+  
+  .text4{
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    border-radius: 16px;
+    background-color: blueviolet;
+    color:black;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.5s;
+    
+  }
+  .text4 :after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition:  0.5s;
+  }
+  .text4 :hover{
+    background-color:blueviolet;
+    padding-right: 25px;
+  }
+  .text4 :hover :after{
+    opacity: 1;
+    right: 0;
+  }
+.img {
+    float: left;
+    width: 15%;
+    padding: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: transform .7s ease-in;
+    
+  }
+  
+  .image-set::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .img:hover {
+    transform: rotate(360deg);
+  }
+  .footer{
+  display: flex;
+  flex-direction: row;
+  }
+  .contact{
+    
+    padding-left:200px;
+
+  }
+  @media screen and (max-width: 480px){
+    .intro:before{
+      width:50%;
+      height:300px;
+      justify-content: center;
+      align-content: center;
+      
+    }
+  
+  }
